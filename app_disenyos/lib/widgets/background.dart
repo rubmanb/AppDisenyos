@@ -20,7 +20,7 @@ class Background extends StatelessWidget {
         Container(
           decoration: boxDecoration,
         ),
-        const Positioned(
+        Positioned(
           top: -100,
           left: -30,
           child: _PinkBox(),
@@ -31,8 +31,6 @@ class Background extends StatelessWidget {
 }
 
 class _PinkBox extends StatelessWidget {
-  const _PinkBox({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Transform.rotate(
@@ -41,11 +39,14 @@ class _PinkBox extends StatelessWidget {
         width: 360,
         height: 360,
         decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(80),
-            gradient: const LinearGradient(colors: [
+          borderRadius: BorderRadius.circular(80),
+          gradient: const LinearGradient(
+            colors: [
               Color.fromRGBO(236, 98, 188, 1),
               Color.fromRGBO(251, 142, 172, 1),
-            ])),
+            ],
+          ),
+        ),
       ),
     );
   }

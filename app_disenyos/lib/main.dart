@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'App diseños',
         initialRoute: 'home',
+        theme: ThemeData.dark(),
         routes: {
           'home': (_) => const HomeScreen(),
           'basic_design': (_) => const BasicDesignScreen(),
